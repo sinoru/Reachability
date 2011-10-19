@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1960EADF144F216B0082C9A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1960EADE144F216B0082C9A8 /* Foundation.framework */; };
-		1960EAE5144F216B0082C9A8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1960EAE4144F216B0082C9A8 /* Reachability.m */; };
+		1960EAED144F217E0082C9A8 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 1960EAEB144F217E0082C9A8 /* Reachability.h */; };
+		1960EAEE144F217E0082C9A8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1960EAEC144F217E0082C9A8 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1960EADB144F216B0082C9A8 /* libReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1960EADE144F216B0082C9A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1960EAE2144F216B0082C9A8 /* Reachability-Prefix.pch */ = {isa = PBXFileReference; path = "Reachability-Prefix.pch"; sourceTree = "<group>"; };
-		1960EAE3144F216B0082C9A8 /* Reachability.h */ = {isa = PBXFileReference; path = Reachability.h; sourceTree = "<group>"; };
-		1960EAE4144F216B0082C9A8 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1960EAE2144F216B0082C9A8 /* Reachability-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reachability-Prefix.pch"; sourceTree = "<group>"; };
+		1960EAEB144F217E0082C9A8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1960EAEC144F217E0082C9A8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +60,8 @@
 		1960EAE0144F216B0082C9A8 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				1960EAE3144F216B0082C9A8 /* Reachability.h */,
-				1960EAE4144F216B0082C9A8 /* Reachability.m */,
+				1960EAEB144F217E0082C9A8 /* Reachability.h */,
+				1960EAEC144F217E0082C9A8 /* Reachability.m */,
 				1960EAE1144F216B0082C9A8 /* Supporting Files */,
 			);
 			path = Reachability;
@@ -81,6 +82,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1960EAED144F217E0082C9A8 /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1960EAE5144F216B0082C9A8 /* Reachability.m in Sources */,
+				1960EAEE144F217E0082C9A8 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
