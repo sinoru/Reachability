@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1960EADF144F216B0082C9A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1960EADE144F216B0082C9A8 /* Foundation.framework */; };
-		1960EAED144F217E0082C9A8 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 1960EAEB144F217E0082C9A8 /* Reachability.h */; };
+		1960EAED144F217E0082C9A8 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 1960EAEB144F217E0082C9A8 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1960EAEE144F217E0082C9A8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1960EAEC144F217E0082C9A8 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
@@ -147,7 +147,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -157,7 +160,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -170,10 +173,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -193,8 +199,10 @@
 				DSTROOT = /tmp/Reachability.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Reachability/Reachability-Prefix.pch";
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -209,8 +217,10 @@
 				DSTROOT = /tmp/Reachability.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Reachability/Reachability-Prefix.pch";
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -234,6 +244,7 @@
 				1960EAEA144F216B0082C9A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
