@@ -10,6 +10,7 @@
 		1960EADF144F216B0082C9A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1960EADE144F216B0082C9A8 /* Foundation.framework */; };
 		1960EAED144F217E0082C9A8 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 1960EAEB144F217E0082C9A8 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1960EAEE144F217E0082C9A8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1960EAEC144F217E0082C9A8 /* Reachability.m */; };
+		19686E9514531DE10080EACA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19686E9414531DE10080EACA /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		1960EAE2144F216B0082C9A8 /* Reachability-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reachability-Prefix.pch"; sourceTree = "<group>"; };
 		1960EAEB144F217E0082C9A8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		1960EAEC144F217E0082C9A8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		19686E9414531DE10080EACA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1960EADF144F216B0082C9A8 /* Foundation.framework in Frameworks */,
+				19686E9514531DE10080EACA /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				1960EADE144F216B0082C9A8 /* Foundation.framework */,
+				19686E9414531DE10080EACA /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
