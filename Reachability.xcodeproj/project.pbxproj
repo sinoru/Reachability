@@ -116,7 +116,7 @@
 		1960EAD2144F216A0082C9A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 1960EAD5144F216A0082C9A8 /* Build configuration list for PBXProject "Reachability" */;
 			compatibilityVersion = "Xcode 3.2";

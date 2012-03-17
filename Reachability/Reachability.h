@@ -46,6 +46,7 @@
 */
 
 
+#import <netinet/in.h>
 #import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 
